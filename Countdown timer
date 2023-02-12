@@ -1,0 +1,14 @@
+import time
+def countdown():
+    secs = int(input('How many seconds do you want to countdown? '))
+    while secs > 0 :
+        mins = secs // 60
+        seconds = secs % 60
+        timer = f'Remaining time: {mins}:{seconds}'
+        print(timer)
+        time.sleep(1)
+        secs = secs - 1
+
+    print('Timer Ended !')
+
+countdown()
